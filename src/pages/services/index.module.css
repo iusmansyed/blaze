@@ -1,0 +1,112 @@
+@font-face {
+    font-family: exBold;
+    src: url(../../assets/fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: popBold;
+    src: url(../../assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: popSemiBold;
+    src: url(../../assets/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: popReg;
+    src: url(../../assets/fonts/Poppins-Regular.ttf);
+}
+
+.services {
+    padding: 50px 0;
+}
+
+.services h1 {
+    font-family: exBold;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    padding: 20px 0px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 5px;
+    gap: 10px;
+    margin: 100px 10px 10px;
+    border-radius: 15px;
+    transition: 1s;
+    border: 1px solid transparent;
+    position: relative;
+    line-height: 20px;
+    height: 500px;
+}
+
+.description:hover {
+    border: 0.5px solid red;
+    box-shadow: rgba(192, 90, 90, 0.2) 0px 7px 29px 0px;
+    transform: scale(1.01);
+    transition: 0.5s;
+
+    /* position: absolute; */
+}
+
+.description h1 {
+    color: red;
+    font-size: 50px;
+    border: none;
+}
+
+.description h3 {
+    font-family: popBold;
+}
+
+.description p {
+    font-family: popReg;
+    line-height: 24px;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (max-width:1024px) {
+    .description h3 {
+        font-size: 20px;
+    }
+
+    .description p {
+        overflow-x: scroll;
+    }
+
+    .description p::-webkit-scrollbar {
+        width: 5px;
+        border-radius: 15px;
+    }
+
+    /* Change the color of the scrollbar thumb (the draggable part) */
+    .description p::-webkit-scrollbar-thumb {
+        background: red;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1px 5px;
+        gap: 10px;
+        margin: 24px 10px 10px;
+        border-radius: 15px;
+        transition: 0.5s;
+        border: 1px solid transparent;
+        position: relative;
+        line-height: 20px;
+        height: 250px;
+    }
+}

@@ -1,0 +1,66 @@
+@font-face {
+    font-family: exBold;
+    src: url(../../assets/fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: popBold;
+    src: url(../../assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: popSemiBold;
+    src: url(../../assets/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: popReg;
+    src: url(../../assets/fonts/Poppins-Regular.ttf);
+}
+
+.Projects {
+    padding: 50px 0;
+}
+.Project_heading{
+    padding: 50px 0px;
+}
+.Project_heading h1 {
+    font-family: exBold;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    padding: 20px 0px;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.images img{
+    width: 100%;
+}
+
+.swiper_container {
+  
+    width: 100px;
+    padding: 100px 0;
+}
+
+.swiper_slide {
+    flex: 0 0 auto;
+}
+.helloworld{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+}
+.images_div{
+    margin-top: 20px;
+}
+@media (max-width:320px) {
+    .images{
+        width: 100%;
+    }
+}

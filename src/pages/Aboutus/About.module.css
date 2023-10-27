@@ -1,0 +1,62 @@
+@font-face {
+    font-family: exBold;
+    src: url(../../assets/fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: popBold;
+    src: url(../../assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: popSemiBold;
+    src: url(../../assets/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: popReg;
+    src: url(../../assets/fonts/Poppins-Regular.ttf);
+}
+
+.about {
+    padding: 100px 0;
+}
+
+.about h1 {
+    font-family: exBold;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px 0;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+}
+
+.about h2 {
+    font-family: popBold;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+@media (max-width:768px) {
+    .about {
+        font-family: popBold;
+        line-height: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:425px) {
+    .about h2 {
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+}

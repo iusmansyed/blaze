@@ -1,0 +1,215 @@
+@font-face {
+    font-family: exBold;
+    src: url(../../assets/fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: popBold;
+    src: url(../../assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: popSemiBold;
+    src: url(../../assets/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: popReg;
+    src: url(../../assets/fonts/Poppins-Regular.ttf);
+}
+
+.mainDiv {
+    position: relative;
+    padding: 0px 0px 50px 0px;
+    z-index: 0;
+}
+
+.heads h3 {
+    color: red;
+    font-family: popSemiBold;
+    font-size: 20px;
+}
+
+.heads h1 {
+    color: white;
+    font-family: exbold;
+    font-size: 52px;
+    padding: 25px 0px 10px;
+}
+
+.btns {
+    display: flex;
+    gap: 20px;
+    padding: 40px 0 0px;
+}
+
+.contact_btn button {
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-family: popSemiBold;
+    text-transform: uppercase;
+    border: none;
+    transition: 0.5s;
+    color: #fff;
+    background-color: red;
+}
+
+.background_video_container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.video img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+
+}
+
+.contact_btn button:hover {
+    background-color: red;
+    color: black;
+}
+
+.mail button {
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-family: popSemiBold;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border: 2px solid transparent;
+}
+
+.mail button:hover {
+    border: 2px solid red;
+    color: red;
+    background-color: black;
+}
+
+.header {
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.topHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact_sec {
+    display: flex;
+    gap: 20px;
+}
+
+.call i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: red;
+    
+}
+
+.chat i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: red;
+}
+
+.call span {
+    font-family: popSemiBold;
+    font-size: 18px;
+    color: white;
+    border-right: 1px solid red;
+    padding: 0px 10px 0px 0px;
+}
+
+.chat span {
+    font-family: popSemiBold;
+    font-size: 20px;
+   
+    color: white;
+
+}
+
+@media (max-width:425px) {
+    .call span {
+        display: none;
+    }
+
+    .chat span {
+        display: none;
+
+    }
+}
+
+@media (max-width:768px) {
+    .imglogo {
+        display: none;
+    }
+}
+
+@media (max-width:375px) {
+    .heads h3 {
+        color: red;
+        font-family: popSemiBold;
+        font-size: 15px;
+    }
+
+    .heads h1 {
+        color: white;
+        font-family: exbold;
+        font-size: 40px;
+        padding: 25px 0px 10px;
+    }
+
+    .contact_btn button {
+        padding: 10px 30px;
+    }
+
+    .mail button {
+        padding: 8px 30px;
+    }
+}
+
+@media (max-width:320px) {
+    .heads h1 {
+        color: white;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .heads h3 {
+        text-align: center;
+    }
+
+    .btns {
+        justify-content: center;
+    }
+
+    .contact_btn button {
+        padding: 10px 10px;
+    }
+
+    .mail button {
+        padding: 8px 10px;
+    }
+}

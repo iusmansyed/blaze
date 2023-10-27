@@ -1,0 +1,61 @@
+@font-face {
+    font-family: exBold;
+    src: url(../../assets/fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: popBold;
+    src: url(../../assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: popSemiBold;
+    src: url(../../assets/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: popReg;
+    src: url(../../assets/fonts/Poppins-Regular.ttf);
+}
+
+
+.Details {
+    padding: 50px 0;
+    background-color: black;
+}
+.heading{
+
+    padding: 30px 0;
+}
+.heading h1 {
+    font-family: exBold;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    padding: 30px 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+   
+    
+}
+form{
+    margin-top: 10px;
+}
+.form-group input{
+    font-family: 'popReg';
+}
+.form-group input:active{
+    outline: red;
+
+}
+label{
+    color: white;
+    font-family: popSemiBold;
+    text-transform: uppercase;
+}
+
+@media (max-width:320px) {
+    .images{
+        width: 100%;
+    }
+}
